@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="stripe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="50%" stop-color="#635BFF" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0A0D18" stroke="url(#stripe-grad)" stroke-width="2" />
+
+  <g transform="translate(4, 4)">
+    <circle cx="28" cy="28" r="18" stroke="url(#stripe-grad)" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.4" />
+    <path d="M28 10 L28 28 M46 28 L28 28 M28 46 L28 28 M10 28 L28 28 M41 15 L28 28 M15 41 L28 28" stroke="url(#stripe-grad)" stroke-width="1.8" stroke-linecap="round" />
+    
+    <circle cx="28" cy="10" r="3.5" fill="#00D4FF" />
+    <circle cx="46" cy="28" r="3.5" fill="#635BFF" />
+    <circle cx="28" cy="46" r="3.5" fill="#A855F7" />
+    <circle cx="10" cy="28" r="3.5" fill="#00D4FF" />
+    <circle cx="41" cy="15" r="2.5" fill="#38BDF8" />
+    <circle cx="15" cy="41" r="2.5" fill="#8F89FF" />
+
+    <circle cx="28" cy="28" r="7" fill="#0A0D18" stroke="#635BFF" stroke-width="2" />
+    <path d="M28 23 C28 26 28 26 31 28 C28 30 28 30 28 33 C28 30 28 30 25 28 C28 26 28 26 28 23 Z" fill="url(#stripe-grad)" />
+  </g>
+</svg>

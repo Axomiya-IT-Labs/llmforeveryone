@@ -1,0 +1,108 @@
+---
+title: "Prompt Engineering 101: The Techniques That Actually Work"
+excerpt: "Chain-of-thought, few-shot examples, role assignment, and output constraints — the four techniques that separate average AI users from power users."
+author: "Rakibul"
+date: "2026-08-05"
+readTime: "12 min read"
+category: "Technique"
+tags: ["prompt-engineering", "techniques", "advanced", "productivity"]
+featured: true
+---
+
+# Prompt Engineering 101: The Techniques That Actually Work
+
+Prompt engineering sounds intimidating. It's not. It's simply learning what kinds of instructions help AI models think more clearly and produce more useful outputs.
+
+Here are the four techniques with the highest real-world leverage.
+
+---
+
+## Technique 1: Role Assignment
+
+Assigning a specific role primes the model to draw on relevant domain knowledge and communication style.
+
+**Basic:** "Explain blockchain to me."
+
+**With Role:** "Act as a CTO explaining blockchain to a non-technical board of directors. Use no jargon. Focus on business implications, not technical mechanisms. Keep it under 200 words."
+
+Role assignment works because LLMs have absorbed vast amounts of domain-specific text during training. Telling it what lens to use activates that knowledge.
+
+---
+
+## Technique 2: Chain-of-Thought (CoT) Prompting
+
+For complex reasoning tasks, explicitly ask the model to show its reasoning process before giving the answer.
+
+```text
+Before answering, reason through this step by step:
+[Problem]
+First, identify all relevant factors.
+Then, weigh each factor.
+Finally, give me your conclusion and confidence level.
+```
+
+Studies show CoT prompting improves accuracy by 40-70% on reasoning and math tasks.
+
+---
+
+## Technique 3: Few-Shot Examples
+
+Showcase 2-3 examples of what good output looks like before asking for the real thing.
+
+```text
+Here are two examples of the format I want:
+
+Example 1:
+Input: [show input]
+Output: [show ideal output]
+
+Example 2:
+Input: [show input]
+Output: [show ideal output]
+
+Now do the same for:
+Input: [your actual input]
+```
+
+Few-shot examples are especially powerful for maintaining consistent style across multiple outputs.
+
+---
+
+## Technique 4: Output Constraints
+
+Specifying format, length, and structure dramatically improves usability.
+
+```text
+Respond ONLY with:
+1. A bullet-point summary (max 5 points)
+2. A confidence score (Low / Medium / High)
+3. One follow-up question I should ask
+
+Do NOT include preamble or explanation.
+```
+
+---
+
+## The Master Template (All Four Combined)
+
+```text
+Act as a [ROLE] with [X years] of experience in [DOMAIN].
+
+Context: [Provide rich background on the situation]
+
+Task: [Clearly state what you need]
+
+Constraints:
+- [Length/format requirement]
+- [Tone/style requirement]
+- [What to avoid]
+
+Reason through this step by step before giving your final answer.
+
+Format your response as:
+- [Section 1]
+- [Section 2]
+- [Section 3]
+```
+
+This template consistently produces exceptional results across virtually any domain. Bookmark it.
